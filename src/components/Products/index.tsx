@@ -53,7 +53,7 @@ const Products: FC = () => {
             <label htmlFor='filter'>Filter by quantity_available {'>'} 0</label>
             {!loading ? (
                 <div className={cls.products_list}>
-                    {products.map((product: IProduct) => {
+                    {productsList.map((product: IProduct) => {
                         return <ProductItem product={product} key={product.product_id} />;
                     })}
                 </div>
